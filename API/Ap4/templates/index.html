@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AP4 Joke Form</title>
+</head>
+<body>
+    <h1>Vraag een grap op</h1>
+
+    <form method="POST">
+        <button type="submit">Haal grap op</button>
+    </form>
+
+    {% if joke %}
+        <h2>Resultaat:</h2>
+        <p>{{ joke }}</p>
+    {% endif %}
+</body>
+</html>
